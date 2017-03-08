@@ -7,7 +7,7 @@ public class Java {
 
     public static void main(String[] args) throws Exception {
         try {
-            String token = "333681572:AAGYINfvBIw8NsMYjFT-CZwtBhHUKW0Afmw";
+            String token = "XXXXXXX";
             String url = "https://api.telegram.org/bot" + token + "/";
             JSONObject request = new JSONObject(readUrl(url + "getUpdates"));
 
