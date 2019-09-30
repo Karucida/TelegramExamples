@@ -6,7 +6,7 @@ r = r['result']
 
 for message in r:
   chat_id = message['message']['chat']['id']
-  if message['message'].get('text') and message['message'].get('text') == '/start':
+  if message['message'].get('text') == '/start':
     params = {'text':'Hello World', 'chat_id':chat_id}
     r2 = requests.get(url.format('sendMessage'), params)
     pprint(r2.json())
